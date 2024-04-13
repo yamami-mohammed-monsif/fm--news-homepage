@@ -1,0 +1,62 @@
+:root {
+    --clr-primary-400: hsl(35, 77%, 62%);
+    --clr-primary-500: hsl(5, 85%, 63%);
+
+    --clr-neutral-200: hsl(36, 100%, 99%);
+    --clr-neutral-300: hsl(233, 8%, 79%);
+    --clr-neutral-400: hsl(236, 13%, 42%);
+    --clr-neutral-800: hsl(240, 100%, 5%);
+
+    --ff-main: "Inter", sans-serif;
+
+    --fs-400: .9375rem;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-xbold: 800 ;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: var(--ff-main);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+    width: 85%;
+    margin-inline: auto;
+}
+
+
+/* *********************************************************************
+header
+********************************************************************** */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1.2rem;
+}
+
+nav img {
+    width: 2.5rem;
+}
