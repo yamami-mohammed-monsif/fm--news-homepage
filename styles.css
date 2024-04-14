@@ -59,7 +59,7 @@ a {
 
 .container {
     width: 85%;
-    max-width: 550px;
+    max-width: 600px;
     margin-inline: auto;
 }
 
@@ -91,7 +91,7 @@ nav img {
     display: none;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 600px) {
 
     .nav-links {
         position: fixed;
@@ -103,6 +103,13 @@ nav img {
         padding-left: 3rem;
         background-color: white;
         z-index: 100;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .nav-links[data-visible="true"] {
+        transform: translateX(0%);
     }
 
     .nav-links a {
@@ -110,14 +117,19 @@ nav img {
     }
 
     .nav-toggle {
+        display: block;
         position: absolute;
         background: url(assets/images/icon-menu.svg) no-repeat;
         border: 0;
         aspect-ratio: 1;
         width: 2.5rem;
-        right: 4rem;
+        right: 10%;
+        top: 1.6rem;
         z-index: 9999;
-        display: block;
+    }
+
+    .nav-toggle[aria-expanded="true"] {
+        background: url(assets/images/icon-menu-close.svg) no-repeat;
     }
 }
 
