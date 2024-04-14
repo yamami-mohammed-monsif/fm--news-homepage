@@ -18,13 +18,14 @@
     <div class="container">
       <nav>
         <img src="assets/images/logo.svg" alt="">
-        <img src="assets/images/icon-menu.svg" alt="" class="hamburger-button">
-        <div class="nav-links">
+        <!-- <img src="assets/images/icon-menu.svg" alt="" class="hamburger-button"> -->
+        <button class="nav-toggle" aria-controls="navigation-bar" aria-expanded="false"></button>
+        <div class="nav-links" id="navigation-bar">
           <a href="#">Home</a>
+          <a href="#new">New</a>
           <a href="">Popular</a>
           <a href="#trending">Trending</a>
           <a href="">Categories</a>
-          <a href="#new">New</a>
         </div>
       </nav>
     </div>
@@ -86,6 +87,7 @@
         </div>
       </div>
     </div>
-  </main> 
+  </main>
+  <div class="overlay"></div>
 </body>
 </html>
